@@ -75,9 +75,9 @@
       color: #9ca3af;
     }
     img.cover {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      max-width: 15%;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
     .youtube-button {
       background-color: #ff0000;
@@ -87,11 +87,23 @@
     .youtube-button:hover {
       background-color: #cc0000;
     }
+    .blinking-text {
+      color: #facc15;
+      font-weight: bold;
+      animation: blink 1.5s infinite;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="CAPA_DO_EBOOK.png" alt="Capa do E-book" class="cover">
+    <img src="capa.png" alt="Capa do E-book" class="cover">
     <h1>Baixe agora o e-book gratuito:</h1>
     <h2>3 Passos para Construir uma Mentalidade Indestrutível</h2>
 
@@ -117,7 +129,7 @@
     <p class="quote">“A mente é o campo de batalha. Você escolhe quem vence.”</p>
 
     <div class="footer">
-      <p>Inscreva-se no canal <strong>Mentalidade Indestrutível</strong> para continuar sua jornada.</p>
+      <p class="blinking-text">Inscreva-se no canal <strong>Mentalidade Indestrutível</strong> para continuar sua jornada.</p>
     </div>
   </div>
 </body>
